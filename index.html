@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+<html>
+  <body>
+    <title>Julia's Soundboard</title>
+    <div class="banner">
+      <h1>Julia's Soundboard</h1>
+      <img src="JuliaFace.jpg" />
+    </div>
+    <div class="buttons">
+      <button class="button" role="button" onclick="playSound('sound1.mp3')">
+        Noted...
+      </button>
+      <button class="button" role="button" onclick="playSound('sound2.mp3')">
+        Laugh 1
+      </button>
+      <button class="button" role="button" onclick="playSound('sound3.mp3')">
+        Let's be friends!
+      </button>
+      <button class="button" role="button" onclick="playSound('sound4.mp3')">
+        Laugh 2
+      </button>
+      <button class="button" role="button" onclick="playSound('sound5.mp3')">
+        Woo! Bob Moses yeah!!
+      </button>
+      <button class="button" role="button" onclick="playSound('sound6.mp3')">
+        Laugh 3
+      </button>
+    </div>
+    <script>
+      function playSound(soundFile) {
+        var audio = new Audio(soundFile);
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
