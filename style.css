@@ -11,6 +11,10 @@ body {
   align-items: center;
 }
 
+h1 {
+  font-size: xxx-large;
+}
+
 img {
   height: 250px;
 }
