@@ -1,4 +1,6 @@
 {
+  "start_url": "https://tbellenger.github.io/julia/",
+  "display": "standalone",
   "name": "Julia's Soundboard",
   "icons": [
     {
