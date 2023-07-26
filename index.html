@@ -96,12 +96,16 @@
     </div>
     <script>
       function playSound(soundFile) {
-        var audio = new Audio(soundFile);
-        document.querySelector(".face").classList.add("jiggle");
-        audio.play();
-        setTimeout(() => {
-          document.querySelector(".face").classList.remove("jiggle");
-        }, 1000);
+        const audio = new Audio(soundFile);
+        audio.addEventListener("loadeddata", () => {
+          let duration = audio.duration;
+          // The duration variable now holds the duration (in seconds) of the audio clip
+          document.querySelector(".face").classList.add("jiggle");
+          audio.play();
+          setTimeout(() => {
+            document.querySelector(".face").classList.remove("jiggle");
+          }, duration * 1000);
+        });
       }
     </script>
   </body>
