@@ -16,7 +16,7 @@ h1 {
 }
 
 img {
-  height: 300px;
+  height: 350px;
 }
 
 .banner {
@@ -28,7 +28,7 @@ img {
   height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .button {
@@ -109,6 +109,8 @@ img {
   animation-iteration-count: infinite;
 
   z-index: 1000;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 @keyframes shake {
