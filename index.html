@@ -63,7 +63,7 @@
     <title>Julia's Soundboard</title>
     <div class="banner">
       <h1>Julia's Soundboard</h1>
-      <img src="images/JuliaFace.jpg" />
+      <img class="face" src="images/JuliaFace.jpg" />
     </div>
     <div class="buttons">
       <button class="button" role="button" onclick="playSound('noted.m4a')">
@@ -102,13 +102,17 @@
         role="button"
         onclick="playSound('/julia/sound6.mp3')"
       >
-        More laughs
+        Don't worry about it
       </button>
     </div>
     <script>
       function playSound(soundFile) {
         var audio = new Audio(soundFile);
+        document.querySelector(".face").classList.add("jiggle");
         audio.play();
+        setTimeout(() => {
+          document.querySelector(".face").classList.remove("jiggle");
+        }, 1000);
       }
     </script>
   </body>
