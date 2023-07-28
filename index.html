@@ -60,53 +60,12 @@
 <link rel="icon" type="image/x-icon" href="images/juliaface_LM6_icon.ico" />
 <html>
   <body>
-    <title>Julia's Soundboard</title>
+    <title></title>
     <div class="banner">
-      <h1>Julia's Soundboard</h1>
-      <img class="face" src="images/JuliaFace.jpg" />
+      <h1 class="title"></h1>
+      <img class="face" src= />
     </div>
-    <div class="buttons">
-      <button class="button" role="button" onclick="playSound('noted.m4a')">
-        Noted...
-      </button>
-      <button class="button" role="button" onclick="playSound('laughing.m4a')">
-        Laugh
-      </button>
-      <button
-        class="button"
-        role="button"
-        onclick="playSound('dontworryboutit.m4a')"
-      >
-        Don't worry about it
-      </button>
-      <button
-        class="button"
-        role="button"
-        onclick="playSound('dowhatiwant.m4a')"
-      >
-        I do what I want...
-      </button>
-      <button
-        class="button"
-        role="button"
-        onclick="playSound('wootbobmoses.m4a')"
-      >
-        Woot! Bob Moses!!
-      </button>
-    </div>
-    <script>
-      function playSound(soundFile) {
-        const audio = new Audio(soundFile);
-        audio.addEventListener("loadeddata", () => {
-          let duration = audio.duration;
-          // The duration variable now holds the duration (in seconds) of the audio clip
-          document.querySelector(".face").classList.add("jiggle");
-          audio.play();
-          setTimeout(() => {
-            document.querySelector(".face").classList.remove("jiggle");
-          }, duration * 1000);
-        });
-      }
-    </script>
+    <div class="buttons"></div>
+    <script src="index.js" defer></script>
   </body>
 </html>

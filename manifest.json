@@ -1,7 +1,7 @@
 {
   "start_url": "https://tbellenger.github.io/julia/",
   "display": "standalone",
-  "name": "Julia's Soundboard",
+  "name": "Soundboard",
   "icons": [
     {
       "src": "images/android-icon-36x36.png",
