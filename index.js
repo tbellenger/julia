@@ -20,10 +20,8 @@ const jason = {
       label: "And so, what is the dinosaur",
       sound: "andsowhatisthedinosaur.m4a",
     },
-  ],
-  buttons: [{ label: "Ducks like snacks too", sound: "duckslikesnacks.m4a" }],
-  buttons: [{ label: "Electo Fleckto", sound: "electo-fleckto.m4a" }],
-  buttons: [
+    { label: "Ducks like snacks too", sound: "duckslikesnacks.m4a" },
+    { label: "Electo Fleckto", sound: "electo-fleckto.m4a" },
     {
       label: "You know there should be music",
       sound: "youknowthereshouldbemusic.m4a",
