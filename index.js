@@ -3,10 +3,10 @@ const julia = {
   header: "Julia's Soundboard",
   face: "images/JuliaFace.jpg",
   buttons: [
-    { label: "Noted...", sound: "noted.m4a" },
+    { label: "Noted", sound: "noted.m4a" },
     { label: "Laugh", sound: "laughing.m4a" },
     { label: "Don't worry about it", sound: "dontworryboutit.m4a" },
-    { label: "I do what I want...", sound: "dowhatiwant.m4a" },
+    { label: "I do what I want", sound: "dowhatiwant.m4a" },
     { label: "Woot! Bob Moses!!", sound: "wootbobmoses.m4a" },
   ],
 };
